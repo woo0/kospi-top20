@@ -27,7 +27,7 @@ export default function Home() {
       } else {
         setError(response.error || 'Failed to fetch stock data');
       }
-    } catch (err) {
+    } catch {
       setError('네트워크 오류가 발생했습니다.');
     } finally {
       setLoading(false);
